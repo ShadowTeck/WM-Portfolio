@@ -1,3 +1,12 @@
+@font-face{
+    font-family:'SWEET_REVENGE';
+    src: url('fonts/SWEET_REVENGE.otf');
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: sans-serif;
     background-color: #040404;
@@ -16,6 +25,24 @@ body{
         height: 100vh;
         z-index: -1;
     }
+}
+
+.navbar {
+    ul {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0 auto;
+    }
+}
+
+h1 {
+    font-family: 'DotGothic16', sans-serif;
+    color: lightblue;
+    margin: 0 0 10px 0;
+    font-size: 70px;
+}
+h2 {
+    font-size: 2rem;
 }
 
 a{
@@ -37,7 +64,7 @@ a{
 
     &::before{
         content: "";
-        background: rgba(0, 0, 0, 0.6);
+        background: rgba(0, 0, 0, 0.5);
         position: absolute;
         bottom: 0;
         top: 0;
@@ -56,13 +83,6 @@ a{
         flex-direction: column;
         padding: 0 15px;
     }
-    
-    h1 {
-        margin: 0 0 10px 0;
-        font-size: 64px;
-        font-family: fantasy; //update later
-        color: #fff;
-    }
 
     h2 {
         color: #fff;
@@ -80,6 +100,12 @@ a{
 
         i{
             font-size: 48px;
+        }
+
+        img {
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
         }
 
         &:hover{
@@ -103,9 +129,7 @@ a{
             text-transform: uppercase;
             display: block;
             font-weight: 500;
-            font-family: sans-serif;
             color: #fff;
-
             .val{
                 float: right;
                 font-style: normal;
@@ -115,12 +139,21 @@ a{
 
     .progress-bar-wrap {
         background: lightgray;
+        border-radius: 25px;
+        
     }
 
     .progress-bar{
         height: 10px;
         transition: .9s;
         background-color: rgb(0, 191, 255);
+        border-radius: 100px;
+        height: 25px;
+        width: auto;
+        text-align: right;
+        i {
+            padding: 15px;
+        }
     }
 
 }
@@ -145,7 +178,6 @@ a{
             font-size: 18px;
             font-weight: 600;
             text-transform: uppercase;
-            font-family: sans-serif;
             color: lightblue;
             margin-bottom: 10px;
         }
@@ -177,5 +209,32 @@ a{
             background: blue;
             border: 2px solid darkblue
         }
+    }
+}
+
+.projects {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    .boxcon {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .box {
+        display: flex;
+        justify-content: center;
+        width: 200px;
+        height: 200px;
+        background-color: grey;
+        margin: 15px;
+        border-radius: 15px;
+        border: 3px lightblue solid;
+    }
+    .box:hover {
+        transition: 1s all;
+        background-color: rgb(155, 155, 155);
+        box-shadow: 0px 0px  black, .5em .5em .5em black;
     }
 }

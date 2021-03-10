@@ -1,0 +1,10 @@
+NOTES
+
+
+Planes for website:
+
+- make a grid for all the projects and have then linked and hosted
+- have a place for resume to download
+- make the skill level bars and some text load in as the page scrolls
+- typewritter js animations
+- all one page

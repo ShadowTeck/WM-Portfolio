@@ -6,14 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Navbar</a>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -22,147 +23,244 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#skills">Skills</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="#resume">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
         </div>
     </nav>
     <section id="landing">
-        <div class="landing-container">
+        <div id="home" class="landing-container">
             <h1>Liam Stockton</h1>
-            <h2>Creative Media Enthusiast and Programmer</h2>
-            <a href="#skills" class="btn-scroll scrollto" title="Scroll down"><i class="bx bx-chevron-down">Test</i></a>
+            <h2 id="yes">Creative Media Enthusiast and Programmer</h2>
+            <a href="#skills" class="btn-scroll scrollto" title="Scroll down"><i class="bx bx-chevron-down"><img
+                        width="20%" src="img/down-arrow.png" alt=""></i></a>
         </div>
     </section>
-    <div id="skills" class="skills container">
-        <div class="section-title">
-            <h2>Skills</h2>
-        </div>
-        <div class="row skills-content">
-            <div class="col-lg-6">
-                <div class="progress">
-                    <span class="skill">HTML<i class="val">80%</i></i></span>
-                    <div class="progress-bar-wrap">
-                        <div class="progress-bar" style="width: 80%"></div>
-                    </div>
-                </div>
-                <div class="progress">
-                    <span class="skill">CSS<i class="val">70%</i></i></span>
-                    <div class="progress-bar-wrap">
-                        <div class="progress-bar" style="width: 70%"></div>
-                    </div>
-                </div>
-                <div class="progress">
-                    <span class="skill">JS<i class="val">60%</i></i></span>
-                    <div class="progress-bar-wrap">
-                        <div class="progress-bar" style="width: 60%"></div>
-                    </div>
-                </div>
+    <div style="background-color: rgb(49, 49, 49);" class="body">
+        <div id="skills" class="skills container">
+            <div class="section-title">
+                <h2 style="text-align: center;">Skills</h2>
             </div>
-            <div class="col-lg-6">
-                <div class="progress">
-                    <span class="skill">SASS<i class="val">70%</i></i></span>
-                    <div class="progress-bar-wrap">
-                        <div class="progress-bar" style="width: 70%"></div>
-                    </div>
-                </div>
-                <div class="progress">
-                    <span class="skill">jQuery<i class="val">50%</i></i></span>
-                    <div class="progress-bar-wrap">
-                        <div class="progress-bar" style="width: 50%"></div>
-                    </div>
-                </div>
-                <div class="progress">
-                    <span class="skill">Bootstrap<i class="val">25%</i></i></span>
-                    <div class="progress-bar-wrap">
-                        <div class="progress-bar" style="width: 25%"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <section class="resume" id="resume">
-        <div class="container">
-
-            <div style="color: white; text-align: center;" class="section-title">
-                <h2>Resume</h2>
-                <p>Check Out My Resume!</p>
-            </div>
-
-            <div class="row">
+            <div class="row skills-content">
                 <div class="col-lg-6">
-                    <h3 class="resume-title">Summary</h3>
-                    <div class="resume-item pb-0">
-                        <h4>Liam Stockton</h4>
-                        <p><em>A brief description about yourself and what you want to get out of your job. Talk about strengths and experiance</em></p>
-                        <p>
+                    <div class="progress">
+                        <span class="skill">HTML</span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" style="width: 80%"><i class="val">80%</i></div>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <span class="skill">CSS</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" style="width: 70%"><i class="val">70%</i></div>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <span class="skill">JS</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" style="width: 60%"><i class="val">60%</i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="progress">
+                        <span class="skill">SASS</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" style="width: 70%"><i class="val">70%</i></div>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <span class="skill">jQuery</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" style="width: 50%"><i class="val">50%</i></div>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <span class="skill">Bootstrap</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" style="width: 25%"><i class="val">25%</i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="resume" id="resume">
+            <div class="container">
+
+                <div style="color: white; text-align: center;" class="section-title">
+                    <h2>Resume</h2>
+                    <p><em>Browse all my expertises and knowledge!</em></p>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h3 class="resume-title">Summary</h3>
+                        <div class="resume-item pb-0">
+                            <h4>Liam Stockton</h4>
+                            <p><em>A brief description about yourself and what you want to get out of your job. Talk
+                                    about strengths and experiance</em></p>
+                            <p>
                             <ul>
                                 <li>Surprise, AZ</li>
                                 <li>(480)-662-8471</li>
                                 <li>shadowteckst@gmail.com</li>
                             </ul>
-                        </p>
-                    </div>
+                            </p>
+                        </div>
 
-                    <h3 class="resume-title">Education</h3>
-                    <div class="resume-item">
-                        <h4>HS Diploma</h4>
-                        <h5>2022</h5>
-                        <p><em>Shadow Ridge HighSchool</em></p>
-                        <p>Awards, Honors, General Information about your time</p>
-                    </div>
-                    <div class="resume-item">
-                        <h4>What degree you graduated with</h4>
-                        <h5>2022</h5>
-                        <p><em>West-Mec Coding</em></p>
-                        <p>Awards, Honors, General Information about your time</p>
-                    </div>
-                    <!--Add more as needed-->
-                </div>
-                <div class="col-lg-6">
-                    <h3 class="resume-title">Certifications</h3>
-                    <div class="resume-item">
-                        <h4>Name of the Cert</h4>
-                        <h5>Year Obtained</h5>
-                        <p><em>Company that provides Cert</em></p>
-                    </div>
+                        <h3 class="resume-title">Education</h3>
+                        <div class="resume-item">
+                            <h4>HighSchool Diploma</h4>
+                            <h5>2022</h5>
+                            <p><em>Shadow Ridge HighSchool</em></p>
+                            <p>Awards, Honors, General Information about your time</p>
+                        </div>
+                        <div class="resume-item">
+                            <h4>Team Treehouse Certification</h4>
+                            <h5>2022</h5>
+                            <p><em>West-Mec Coding</em></p>
+                            <p>Awards, Honors, General Information about your time</p>
+                        </div>
                         <!--Add more as needed-->
-                    <h3 class="resume-title">Professional Experiance</h3>
-                    <div class="resume-item">
-                        <h4>Your position at company</h4>
-                        <h5>Years you worked there</h5>
-                        <p><em>Company and Address</em></p> <!--Westmec, Glendale, AZ-->
-                        <ul>
-                            <li>Key Roles</li>
-                            <li>Responsibilities</li>
-                            <li>related skills</li>
-                        </ul>
                     </div>
-                    <!--Add more as needed-->
+                    <div class="col-lg-6">
+                        <h3 class="resume-title">Certifications</h3>
+                        <div class="resume-item">
+                            <h4>Front-end Development Certification</h4>
+                            <h5>2022</h5>
+                            <p><em>Team Treehouse</em></p>
+                        </div>
+                        <!--Add more as needed-->
+                        <h3 class="resume-title">Professional Experiance</h3>
+                        <div class="resume-item">
+                            <h4>Your position at company</h4>
+                            <h5>Years you worked there</h5>
+                            <p><em>Company and Address</em></p>
+                            <!--Westmec, Glendale, AZ-->
+                            <ul>
+                                <li>Key Roles</li>
+                                <li>Responsibilities</li>
+                                <li>related skills</li>
+                            </ul>
+                        </div>
+                        <!--Add more as needed-->
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="projects" id="projects">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="wrapper">
+                    <div class="boxcon">
+                        <a href="#">
+                            <div class="box"></div>
+                        </a>
+                        <a href="#">
+                            <div class="box"></div>
+                        </a>
+                        <a href="#">
+                            <div class="box"></div>
+                        </a>
+                        <a href="#">
+                            <div class="box"></div>
+                        </a>
+                        <a href="#">
+                            <div class="box"></div>
+                        </a>
+                        <a href="#">
+                            <div class="box"></div>
+                        </a>
+                        <a href="#">
+                            <div class="box"></div>
+                        </a>
+                        <a href="#">
+                            <div class="box"></div>
+                        </a>
+                    </div>
                 </div>
             </div>
+        </section>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!-- Section: Social media -->
+            <!-- Section: Social media -->
 
+            <!-- Section: Form -->
+            <section class="">
+                <form action="">
+                    <!--Grid row-->
+                    <div class="row d-flex justify-content-center">
+                        <!--Grid column-->
+                        <div class="col-auto">
+                            <p class="pt-2">
+                                <strong>Contact us!</strong>
+                            </p>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-md-5 col-12">
+                            <!-- Email input -->
+                            <div class="form-outline form-white mb-4">
+                                <input type="email" id="form5Example2" class="form-control" />
+                                <label class="form-label" for="form5Example2">Email address</label>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-auto">
+                            <!-- Submit button -->
+                            <button type="submit" class="btn btn-outline-light mb-4">
+                                SEND
+                            </button>
+                        </div>
+                        <!--Grid column-->
+                    </div>
+                    <!--Grid row-->
+                </form>
+            </section>
+            <!-- Section: Form -->
+
+            <!-- Section: Text -->
+            <!-- Section: Text -->
+
+            <!-- Section: Links -->
+            <section class="">
+                <!--Grid row-->
+                <div class="row">
+                </div>
+                <!--Grid row-->
+            </section>
+            <!-- Section: Links -->
         </div>
-    </section>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2021 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">Liam Stockton</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
 
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
