@@ -243,6 +243,8 @@ a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 0 auto;
+  width: 60%;
 }
 
 .projects .boxcon {
@@ -270,6 +272,7 @@ a:hover {
   margin: 15px;
   border-radius: 15px;
   border: 3px lightblue solid;
+  background-image: url("http://teamcooper.co.uk/wordpress-content/uploads/2012/02/200px-HTML5-logo.svg_.png");
 }
 
 .projects .box:hover {
@@ -278,5 +281,28 @@ a:hover {
   background-color: #9b9b9b;
   -webkit-box-shadow: 0px 0px  black, .5em .5em .5em black;
           box-shadow: 0px 0px  black, .5em .5em .5em black;
+}
+
+.projects .box-1 {
+  border-radius: 15px;
+  opacity: 0;
+  width: 200px;
+  height: 200px;
+  border: 3px lightblue solid;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  background-color: rgba(173, 216, 230, 0.5);
+  margin: -2px;
+  z-index: -1;
+}
+
+.projects .box-1 h2 {
+  color: red;
+  font-family: 'DotGothic16', sans-serif;
+}
+
+.projects .box-wrap:hover .box-1 {
+  opacity: 1;
+  z-index: 5;
 }
 /*# sourceMappingURL=style.css.map */

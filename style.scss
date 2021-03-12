@@ -216,6 +216,8 @@ a{
     text-align: center;
     display: flex;
     justify-content: center;
+    margin: 0 auto;
+    width: 60%;
     .boxcon {
         display: flex;
         justify-content: center;
@@ -231,10 +233,33 @@ a{
         margin: 15px;
         border-radius: 15px;
         border: 3px lightblue solid;
+        background-image: url("http://teamcooper.co.uk/wordpress-content/uploads/2012/02/200px-HTML5-logo.svg_.png");
     }
     .box:hover {
         transition: 1s all;
         background-color: rgb(155, 155, 155);
         box-shadow: 0px 0px  black, .5em .5em .5em black;
     }
+    .box-1 {
+        border-radius: 15px;
+        opacity: 0;
+        width: 200px;
+        height: 200px;
+        border: 3px lightblue solid;
+        transition: all .5s;
+        background-color: rgba(173, 216, 230, 0.5);
+        margin: -2px;
+        z-index: -1;
+        h2 {
+            color: red;
+            font-family: 'DotGothic16', sans-serif;
+        }
+    }
+    
+    
+    .box-wrap:hover .box-1{
+        opacity: 1;
+        z-index: 5;
+    }
+
 }
